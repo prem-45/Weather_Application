@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1e1e1e;
+  color: #171717;
+}
+
+.container {
+  width: 60%;
+  height: auto;
+  padding: 2rem;
+  margin: 3rem auto;
+  background: white;
+  color: #171717;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #1e1e1e;
+  padding: 0.5rem 2.5rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: 660;
+  letter-spacing: 0.5px;
+
+  &::placeholder {
+    color: #f7f7f7;
+  }
+}
+
+.weather-search {
+  position: relative;
+
+  & i {
+    position: absolute;
+    left: 9px;
+    top: 7px;
+    color: #fff;
+    font-size: 15px;
+  }
+}
+
+.weather-main--data {
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-forecast {
+  background-color: #171717;
+  color: #f7f7f7;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-top: 0.5rem;
+}
+
+.weather-icon {
+  text-align: center;
+}
+.weather-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  & .weather-card {
+    display: flex;
+    gap: 1rem;
+    padding: 0.8rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    &:hover {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      outline: 0.6px solid rgba(0, 0, 0, 0.186);
+    }
+    & i {
+      display: grid;
+      place-items: center;
+    }
+  }
+}
+
+.weather-temperature {
+  font-size: 2rem;
+  font-weight: 660;
+  text-align: center;
+}
+
+.weather-minmax {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
